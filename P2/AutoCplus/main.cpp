@@ -29,8 +29,8 @@ class Auto {
     void setModelo(string modelo) {
         this -> modelo = modelo;
     }
-    void setDistancia(int distancia) {
-        this -> distancia = distancia;
+    void setDistancia(int x) {
+        distancia = x;
     }
     string getMarca(){
         return marca;
@@ -42,6 +42,9 @@ class Auto {
         return distancia;
     }
     void avanzar(){
+        distancia++;
+    }
+    void avanzar(int x){
         distancia += x;
     }
     void imprimir() {
@@ -51,7 +54,8 @@ class Auto {
 
 int main()
 {
+    Auto *tesla = NULL;
+    // INSTANCIA: Localidad de memoria donde se va a guardar un objeto
     cout << "Hola Mundo!" << endl;
-
     return 0;
 }
