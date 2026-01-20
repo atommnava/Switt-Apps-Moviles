@@ -55,7 +55,24 @@ class Auto {
 int main()
 {
     Auto *tesla = NULL;
+    tesla = new Auto("Tesla", "S", 100);
+    tesla -> imprimir();
+    //tesla -> avanzar(100);
+    tesla -> imprimir();
+
+    Auto *miFerrari = new Auto("Ferrari", "Maranello", 500);
+    miFerrari -> imprimir();
+
+    Auto *miCoche = NULL;
+    miCoche = tesla;
+    miCoche -> avanzar(300);
+    miCoche -> imprimir();
+    tesla -> imprimir();
+    miCoche -> imprimir();
+    miFerrari -> imprimir();
+    miCoche = NULL;
+    miFerrari = NULL;
     // INSTANCIA: Localidad de memoria donde se va a guardar un objeto
-    cout << "Hola Mundo!" << endl;
+    // cout << "Hola Mundo!" << endl;
     return 0;
 }
