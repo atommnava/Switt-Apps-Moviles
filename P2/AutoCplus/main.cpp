@@ -41,6 +41,12 @@ class Auto {
     int getDistancia(){
         return distancia;
     }
+    void avanzar(){
+        distancia += x;
+    }
+    void imprimir() {
+        cout << marca << " " << modelo << " | " << distancia << " km" << endl;
+    }
 };
 
 int main()
