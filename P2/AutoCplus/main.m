@@ -9,8 +9,7 @@ int main()
         NSString *nombre = @"Atom";
 
         NSDate *miFecha;
-        miFecha = [NSDate alloc];
-        miFecha = [miFecha init];
+       miFecha = [miFecha init];
         NSDate *hoy = [[NSDate alloc] init];
         NSLog(@"Hola Mundo");
         NSLog(@"Mi relación va a funcionar? : %d", laQuiero && meQuiero);
